@@ -22,3 +22,8 @@ npm install
 ```bash
 npm run serve
 ```
+
+# Login Credentials
+username: admin
+
+password: 12345678
