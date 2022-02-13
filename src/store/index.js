@@ -10,8 +10,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   strict: true,
   state: {
-    baseUrl: '/api',
-    domain: 'http://localhost:3000',
+    baseUrl: process.env.VUE_APP_API_BASE_URL,
+    domain: process.env.VUE_APP_BACKEND_URL,
   },
   modules: {
     authentication,
