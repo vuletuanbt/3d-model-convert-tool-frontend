@@ -221,6 +221,7 @@ export default {
 
       // A file is not chosen!
       if (!this.fileObject) {
+        this.setError('File is required');
         this.loading = false;
         return;
       }
