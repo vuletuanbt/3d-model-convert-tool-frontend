@@ -49,8 +49,13 @@ export default {
           commit('setToken', accessToken);
           router.push('/');
         })
-        .catch(({ data }) => {
-          commit('setLoginError', data);
+        .catch((error) => {
+          if (!error.response) {
+            return;
+          }
+          if (error.response.status = 401) {
+            commit('setLoginError', 'The username or password is incorrect.');
+          }
         });
     },
   },
