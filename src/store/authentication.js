@@ -53,7 +53,7 @@ export default {
           if (!error.response) {
             return;
           }
-          if (error.response.status = 401) {
+          if (error.response.status === 401) {
             commit('setLoginError', 'The username or password is incorrect.');
           }
         });
