@@ -27,3 +27,5 @@ npm run serve
 username: admin
 
 password: 12345678
+# Sample data
+https://github.com/vuletuanbt/3d-model-convert-tool-frontend/tree/main/sample-data
