@@ -1,6 +1,6 @@
 <template>
   <v-form>
-    <h1>Login</h1>
+    <h1>Register</h1>
     <v-container>
       <v-layout row wrap>
         <v-flex xs6 offset-xs3>
