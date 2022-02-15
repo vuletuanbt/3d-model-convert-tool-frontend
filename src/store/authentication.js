@@ -30,7 +30,7 @@ export default {
           router.push('/');
         })
         .catch(() => {
-          commit('setRegisterError', 'An error has occurred');
+          commit('setRegisterError', 'Your username or email is already in use. Try another');
         });
     },
     logout({ commit }) {
