@@ -225,6 +225,13 @@ export default {
         this.loading = false;
         return;
       }
+
+      const maxSize = 1024 * 1024 * 20;
+      if(this.fileObject.size >= maxSize) {
+        this.setError('File is too large');
+        this.loading = false;
+        return;
+      }
       // DO YOUR JOB HERE with fileObjectToUpload
       // https://developer.mozilla.org/en-US/docs/Web/API/File/File
       this.name = this.fileObject.name;
