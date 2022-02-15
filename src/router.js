@@ -17,7 +17,7 @@ export default new Router({
       component: Files,
     },
     {
-      path: '/file/:userId/:fileName',
+      path: '/public/file/:userId/:fileName',
       name: 'file',
       component: File,
     },
