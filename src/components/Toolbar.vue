@@ -3,7 +3,7 @@
     <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title>
       <router-link :to="{name: 'files'}">
-        Mitsubishi Corporation
+        3D Convert Tool
       </router-link>
     </v-toolbar-title>
 
