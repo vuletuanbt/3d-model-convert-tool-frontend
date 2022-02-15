@@ -79,5 +79,8 @@ export default {
       'register',
     ]),
   },
+  mounted() {
+    this.setRegisterError(null)
+  },
 };
 </script>
